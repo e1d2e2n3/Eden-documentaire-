@@ -1,7 +1,13 @@
 *{
-    margin: 0;
-    padding: 0;
+   
     box-sizing: border-box;
+}
+
+
+html,body{
+     margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 
@@ -36,6 +42,18 @@ margin-bottom: 20px;
     border-radius: 10%;
     margin-top: 5em;
     border: #4CAF50 solid 1px;
+}
+
+
+.carde img{
+
+     width: 30px;
+    height: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    object-fit: cover;
+justify-content: space-between ;
+
 }
 
 body.loaded{
@@ -86,7 +104,7 @@ nav ul li a:hover{
 
 .grid{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2,1fr);
     gap: 10px;
     padding: 10px;
 }
@@ -149,10 +167,17 @@ header img{
     background-size: cover;
     text-align: center;
     margin-top: 0;
-    padding: 50px;
+    padding:70px;
     color: #f2f5f7;
 
 
+
+}
+
+
+.apropos h1{
+    text-align: center;
+    margin-top: 2em;
 }
 
 
@@ -169,9 +194,13 @@ header img{
     background-size: cover;
     text-align: center;
     top: 0;
-    padding: 50px;
+    padding: 70px;
     color: #f2f5f7;
     width: 100%;
+}
+
+.Ed h1{
+    margin-top: 2em;
 }
 
 .apropos .fade-text{
@@ -188,7 +217,7 @@ html{
 }
 
 .container {
-    padding: 15px;
+     padding: 15px;
     display: grid;
     grid-template-columns: repeat( 2,1fr);
     gap: 15px;
@@ -197,6 +226,7 @@ html{
 }
 .card{
     background: white;
+ 
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0,0, 0.1);
@@ -240,7 +270,7 @@ border: 2px solid #4CAF50;
 
     display: grid;
     gap: 30px;
-    grid-template-columns: repeat( 2);
+    grid-template-columns: repeat(2);
     padding: 15px;
 
 }
@@ -351,7 +381,6 @@ border-radius: 5em;
 .content P{
 
     font-size: 20PX;
-    margin-bottom: 15px;
     text-align: center;
     color: white;
 }
@@ -362,10 +391,9 @@ border-radius: 5em;
     text-align: center;
 }
 
-.apropos h1{
-    color: white;
-    margin-bottom: -10vh;
-}
+
+
+
 
 
 p{
@@ -486,9 +514,6 @@ h3{
     margin: 3em;
 }
 
-.apropos h1{
-    margin: 1em;
-}
 
 
 header {
@@ -626,3 +651,240 @@ footer img{
 
 
 
+
+   text-decoration: none;
+   
+    
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.op-img{
+
+    width: 120px;
+    height: 130px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    border:green 1px solid;
+    cursor: pointer;
+    top:1px;
+
+    opacity: 1;
+    transform: scale(0.8) translatehY(30px);
+    transition: all 1s ease;  
+
+}
+
+.op{ 
+     width: 120px;
+    height: 130px;
+    border-radius: 50%;
+    border:green 1px solid;
+    cursor: pointer;
+    top:1px;
+    margin: 5em;
+    opacity: 1;
+    transform: scale(0.8) translatehY(30px);
+    transition: all 1s ease;  
+
+    
+}
+
+
+
+
+section{
+
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    height: 50%;
+    display: block;
+    margin: auto;
+    margin-bottom: -40vh;
+    width:100%;
+
+
+    
+}
+
+h3{
+    text-align: justify;
+    margin: 10px;
+}
+
+
+
+
+ .mp{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+
+}
+
+.web .kl{
+    margin-bottom: 10vh;
+
+    margin:10%;
+    gap:20px 10px;
+    
+}
+
+.Ed p{
+    margin: 3em;
+}
+
+
+
+header {
+  background: green;
+  color: white;
+  padding: 15px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  padding: 20px;
+  margin: 10px;
+}
+
+h2 {
+  text-align: center;
+  margin: 2em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+
+}
+
+.card {
+  background: rgb(250, 246, 246);
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+
+
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    background: #334155;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+
+
+@keyframes slideUp {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.pm div{
+    gap: 20px;
+    
+}
+
+
+
+
+
+.grid:hover{
+    transform: scale(1.08);
+    cursor: pointer;
+
+}
+
+ section .categories{
+    position: relative;
+
+}
+
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+footer{
+    background-color:green;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 15px;
+     width: 100%;
+     margin: 0;
+    
+}
+
+
+footer img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+    
